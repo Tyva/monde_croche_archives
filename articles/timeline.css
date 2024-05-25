@@ -1,0 +1,135 @@
+* {
+    font-family: "Times New Roman",sans-serif;
+    background-color: #F2EBBC;
+    margin-left: 48px; margin-right: 48px;
+}
+
+.timeline * {
+    margin-left: 0px; margin-right: 0px;
+}
+
+.timeline h1 {
+    font-size: 56px;
+}
+
+.timeline h2 {
+    font-size: 42px;
+}
+
+.titletimeline {
+    background-color: rgb(189, 111, 10);
+}
+
+.timeline h3 {
+    font-size: 28px;
+}
+
+.title_centre {
+    text-align: center;
+}
+
+.timeline p {
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    font-size: 24px;
+}
+
+.timeline a {
+    margin-left: 0px; margin-right: 0px;
+    color:  brown;
+}
+
+.timeline ul {
+    background-color: rgb(189, 111, 10);
+}
+.timeline ul li {
+    margin-bottom: 20px;
+    background-color: rgb(189, 111, 10);
+}
+
+.retour_index {
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+strong {
+    font-weight: bold;
+    margin-left: 0px; margin-right: 0px;
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    background: #F2EBBC;;
+}
+
+.timeline:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 50%;
+    width: 8px;
+    background: #64330a;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.timeline article {
+    position: relative;
+    background: rgb(189, 111, 10);
+    width: calc( 50% - 50px );
+    padding: 5px;
+}
+
+.timeline article + article {
+    margin-top: 20px;
+}
+
+.timeline article:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc( 100% + 26px );
+    background: #64330a;
+    width: 24px;
+    height: 24px;
+    border: 6px #64330a solid;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline article:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 16px solid rgb(189, 111, 10);
+    border-bottom: 20px solid transparent;
+}
+
+.timeline article:nth-child(even) {
+    margin-left: calc( 50% + 48px );
+}
+
+.timeline article:nth-child(even):before {
+    left: auto;
+    right: calc( 100% + 26px );
+}
+
+.timeline article:nth-child(even):after {
+    left: auto;
+    right: 100%;
+    border-left: none;
+    border-right: 16px solid rgb(189, 111, 10);
+}

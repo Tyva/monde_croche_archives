@@ -1,0 +1,736 @@
+   
+/*MEDIARULE PC*/
+
+    * {
+        font-family: "Times New Roman",sans-serif;
+        margin-left: 48px; margin-right: 48px;
+        background-color: #F2EBBC;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .title_centre {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 50px;
+        font-size: 24px;
+    }
+
+    a {
+        margin-left: 0px; margin-right: 0px;
+        color:  brown;
+    }
+
+    .list_croche {
+        list-style-image: url("images/icons/croche_reduced.png");
+        margin-left: 30; margin-right: 10; margin-top: 10px; margin-bottom: 50px; padding: 0;
+        text-align: start;
+        font-size: 22px;
+    }
+
+    .list_croche_aligned {
+            list-style-image: url("images/icons/croche_reduced.png");
+            margin-left: 30; margin-right: 10; margin-top: 10px; margin-bottom: 50px; padding: 0;
+            text-align: start;
+            font-size: 22px;
+            list-style-type: disc;
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            columns: 3;
+            list-style-position: inside;
+    }
+
+    ul li {
+        margin-bottom: 20px;
+    }
+
+    .retour_index {
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    strong {
+        font-weight: bold;
+        margin-left: 0px; margin-right: 0px;
+    }
+
+    .comment {
+        font-size: 24px;
+        font-style: italic;
+        text-indent:0px;
+    }
+
+    /* IMAGES */
+
+    .img_perso {
+        margin-left:550px;
+    }
+
+    .carte_ville {
+        width: 45%;
+        margin-left: 450px;
+        transition: transform .1s;
+    }
+
+    .carte_ville:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+    }
+
+    #carte_hampe_pointe {
+        width: 45%;
+        margin-left: 615px;
+        display: block;
+        background-color: black;
+        transition: transform .1s;
+    }
+
+    #carte_hampe_pointe:hover {
+        -ms-transform: scale(1.8); /* IE 9 */
+        -webkit-transform: scale(1.8); /* Safari 3-8 */
+        transform: scale(1.8);
+    }
+
+    #carte_regions_centrales {
+        width: 55%;
+        margin-left: 260px;
+        transition: transform .1s;
+    }
+
+    #carte_regions_centrales:hover {
+        -ms-transform: scale(1.8); /* IE 9 */
+        -webkit-transform: scale(1.8); /* Safari 3-8 */
+        transform: scale(1.8);
+    }
+
+    /* TIMELINE CHRONOLOGIE */
+
+    .timeline {
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 60px;
+        background: #d6d6d6;
+    }
+
+    .timeline * {
+        margin-left: 0px; margin-right: 0px;
+    }
+
+    .timeline h2 {
+        font-size: 42px;
+        margin-left:15px;
+        margin-right:15px;
+        margin-top:2px;
+    }
+
+    .titletimeline {
+        background-color: rgb(207, 145, 64);
+    }
+
+    .timeline h3 {
+        font-size: 28px;
+    }
+
+    .title_centre {
+        text-align: center;
+    }
+
+    .timeline p {
+        text-align: center;
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 50px;
+        font-size: 24px;
+    }
+
+    .timeline a {
+        margin-left: 0px; margin-right: 0px;
+        color:  brown;
+    }
+
+    .timeline ul {
+        background-color: rgb(207, 145, 64);
+    }
+    .timeline ul li {
+        margin-bottom: 20px;
+        margin-left:15px;
+        margin-right:15px;
+        background-color: rgb(207, 145, 64);
+        font-size:24px;
+    }
+
+    .timeline:after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 50%;
+        width: 8px;
+        background: #64330a;
+        border-radius: 3px;
+        z-index: 1;
+    }
+
+    .timeline article {
+        position: relative;
+        background: rgb(207, 145, 64);
+        width: calc( 50% - 50px );
+        padding: 5px;
+    }
+
+    .timeline article + article {
+        margin-top: 20px;
+    }
+
+    .timeline article:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: calc( 100% + 26px );
+        background: #64330a;
+        width: 24px;
+        height: 24px;
+        border: 6px #64330a solid;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    .timeline article:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 16px solid rgb(207, 145, 64);
+        border-bottom: 20px solid transparent;
+    }
+
+    .timeline article:nth-child(even) {
+        margin-left: calc( 50% + 48px );
+    }
+
+    .timeline article:nth-child(even):before {
+        left: auto;
+        right: calc( 100% + 26px );
+    }
+
+    .timeline article:nth-child(even):after {
+        left: auto;
+        right: 100%;
+        border-left: none;
+        border-right: 16px solid rgb(207, 145, 64);
+    }
+
+/*MEDIARULE PHONE >400<600"*/
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+
+    * {
+        font-family: "Times New Roman",sans-serif;
+        margin-left: 15px; margin-right: 15px;
+        background-color: #F2EBBC;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .title_centre {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 50px;
+        font-size: 15px;
+    }
+
+    a {
+        margin-left: 0px; margin-right: 0px;
+        color:  brown;
+    }
+
+    .list_croche {
+        list-style-image: url("images/icons/croche_reduced.png");
+        margin-left: 30; margin-right: 10; margin-top: 10px; margin-bottom: 50px; padding: 0;
+        text-align: start;
+        font-size: 22px;
+    }
+
+    .list_croche_aligned {
+            list-style-image: url("images/icons/croche_reduced.png");
+            margin-left: 30; margin-right: 10; margin-top: 10px; margin-bottom: 50px; padding: 0;
+            text-align: start;
+            font-size: 22px;
+            list-style-type: disc;
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            columns: 3;
+            list-style-position: inside;
+    }
+
+    ul li {
+        margin-bottom: 20px;
+    }
+
+    .retour_index {
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    strong {
+        font-weight: bold;
+        margin-left: 0px; margin-right: 0px;
+    }
+
+    .comment {
+        font-size: 24px;
+        font-style: italic;
+        text-indent:0px;
+    }
+
+    /* IMAGES */
+
+    .img_perso {
+        margin-left:550px;
+    }
+
+    .carte_ville {
+        width: 45%;
+        margin-left: 450px;
+        transition: transform .1s;
+    }
+
+    .carte_ville:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+    }
+
+    #carte_hampe_pointe {
+        width: 45%;
+        margin-left: 615px;
+        display: block;
+        background-color: black;
+        transition: transform .1s;
+    }
+
+    #carte_hampe_pointe:hover {
+        -ms-transform: scale(1.8); /* IE 9 */
+        -webkit-transform: scale(1.8); /* Safari 3-8 */
+        transform: scale(1.8);
+    }
+
+    #carte_regions_centrales {
+        width: 55%;
+        margin-left: 260px;
+        transition: transform .1s;
+    }
+
+    #carte_regions_centrales:hover {
+        -ms-transform: scale(1.8); /* IE 9 */
+        -webkit-transform: scale(1.8); /* Safari 3-8 */
+        transform: scale(1.8);
+    }
+
+    /* TIMELINE CHRONOLOGIE */
+
+    .timeline {
+        width: 90%;
+        padding: 10px 10px;
+        background: #d6d6d6;
+    }
+
+    .timeline * {
+        margin-left: 0px; margin-right: 0px;
+    }
+
+    .timeline h2 {
+        font-size: 17px;
+        margin-left:5px;
+        margin-right:5px;
+        margin-top:2px;
+    }
+
+    .titletimeline {
+        background-color: rgb(207, 145, 64);
+    }
+
+    .timeline h3 {
+        font-size: 22px;
+    }
+
+    .title_centre {
+        text-align: center;
+    }
+
+    .timeline p {
+        text-align: center;
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 50px;
+        font-size: 24px;
+    }
+
+    .timeline a {
+        margin-left: 0px; margin-right: 0px;
+        color:  brown;
+    }
+
+    .timeline ul {
+        background-color: rgb(207, 145, 64);
+    }
+    .timeline ul li {
+        margin-bottom: 2px;
+        margin-left:2px;
+        margin-right:2px;
+        background-color: rgb(207, 145, 64);
+        font-size:80%;
+    }
+
+    .timeline:after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 50%;
+        width: 4px;
+        background: #64330a;
+        border-radius: 3px;
+        z-index: 1;
+    }
+
+    .timeline article {
+        position: relative;
+        background: rgb(207, 145, 64);
+        width: calc( 50% - 35px );
+        padding: 5px;
+    }
+
+    .timeline article + article {
+        margin-top: 0px;
+    }
+
+    .timeline article:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: calc( 100% + 15px );
+        background: #64330a;
+        width: 18px;
+        height: 18px;
+        border: 6px #64330a solid;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    .timeline article:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 99%;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 16px solid rgb(207, 145, 64);
+        border-bottom: 20px solid transparent;
+    }
+
+    .timeline article:nth-child(even) {
+        margin-left: calc( 50% + 43px );
+    }
+
+    .timeline article:nth-child(even):before {
+        left: auto;
+        right: calc( 100% + 26px );
+    }
+
+    .timeline article:nth-child(even):after {
+        left: auto;
+        right: 100%;
+        border-left: none;
+        border-right: 16px solid rgb(207, 145, 64);
+    }
+
+}
+
+/*MEDIARULE PHONE <400"*/
+
+@media only screen and (max-width: 400px) {
+
+    * {
+        font-family: "Times New Roman",sans-serif;
+        margin-left: 10px; margin-right: 10px;
+        background-color: #F2EBBC;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .title_centre {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 50px;
+        font-size: 12px;
+    }
+
+    a {
+        margin-left: 0px; margin-right: 0px;
+        color:  brown;
+    }
+
+    .list_croche {
+        list-style-image: url("images/icons/croche_reduced.png");
+        margin-left: 30; margin-right: 10; margin-top: 10px; margin-bottom: 50px; padding: 0;
+        text-align: start;
+        font-size: 22px;
+    }
+
+    .list_croche_aligned {
+            list-style-image: url("images/icons/croche_reduced.png");
+            margin-left: 30; margin-right: 10; margin-top: 10px; margin-bottom: 50px; padding: 0;
+            text-align: start;
+            font-size: 22px;
+            list-style-type: disc;
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            columns: 3;
+            list-style-position: inside;
+    }
+
+    ul li {
+        margin-bottom: 20px;
+    }
+
+    .retour_index {
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    strong {
+        font-weight: bold;
+        margin-left: 0px; margin-right: 0px;
+    }
+
+    .comment {
+        font-size: 24px;
+        font-style: italic;
+        text-indent:0px;
+    }
+
+    /* IMAGES */
+
+    .img_perso {
+        margin-left:550px;
+    }
+
+    .carte_ville {
+        width: 45%;
+        margin-left: 450px;
+        transition: transform .1s;
+    }
+
+    .carte_ville:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+    }
+
+    #carte_hampe_pointe {
+        width: 45%;
+        margin-left: 615px;
+        display: block;
+        background-color: black;
+        transition: transform .1s;
+    }
+
+    #carte_hampe_pointe:hover {
+        -ms-transform: scale(1.8); /* IE 9 */
+        -webkit-transform: scale(1.8); /* Safari 3-8 */
+        transform: scale(1.8);
+    }
+
+    #carte_regions_centrales {
+        width: 55%;
+        margin-left: 260px;
+        transition: transform .1s;
+    }
+
+    #carte_regions_centrales:hover {
+        -ms-transform: scale(1.8); /* IE 9 */
+        -webkit-transform: scale(1.8); /* Safari 3-8 */
+        transform: scale(1.8);
+    }
+
+    /* TIMELINE CHRONOLOGIE */
+
+    .timeline {
+        width: 90%;
+        padding: 2px 2px;
+        background: #d6d6d6;
+    }
+
+    .timeline * {
+        margin-left: 0px; margin-right: 0px;
+    }
+
+    .timeline h2 {
+        font-size: 17px;
+        margin-left:5px;
+        margin-right:5px;
+        margin-top:2px;
+    }
+
+    .titletimeline {
+        background-color: rgb(207, 145, 64);
+    }
+
+    .timeline h3 {
+        font-size: 22px;
+    }
+
+    .title_centre {
+        text-align: center;
+    }
+
+    .timeline p {
+        text-align: center;
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 50px;
+        font-size: 24px;
+    }
+
+    .timeline a {
+        margin-left: 0px; margin-right: 0px;
+        color:  brown;
+    }
+
+    .timeline ul {
+        background-color: rgb(207, 145, 64);
+        padding-left:20px;
+        padding-right:0px;
+    }
+    .timeline ul li {
+        margin-bottom: 2px;
+        margin-left:2px;
+        margin-right:2px;
+        background-color: rgb(207, 145, 64);
+        font-size:15px;
+    }
+
+    .timeline:after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 50%;
+        width: 4px;
+        background: #64330a;
+        border-radius: 3px;
+        z-index: 1;
+    }
+
+    .timeline article {
+        position: relative;
+        background: rgb(207, 145, 64);
+        width: 40%;
+        padding: 5px;
+    }
+
+    .timeline article + article {
+        margin-top: 0px;
+    }
+
+    .timeline article:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: calc( 100% + 8px );
+        background: #64330a;
+        width: 18px;
+        height: 18px;
+        border: 6px #64330a solid;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    .timeline article:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 99%;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 16px solid rgb(207, 145, 64);
+        border-bottom: 20px solid transparent;
+    }
+
+    .timeline article:nth-child(even) {
+        margin-left: calc( 50% + 43px );
+    }
+
+    .timeline article:nth-child(even):before {
+        left: auto;
+        right: calc( 100% + 26px );
+    }
+
+    .timeline article:nth-child(even):after {
+        left: auto;
+        right: 100%;
+        border-left: none;
+        border-right: 16px solid rgb(207, 145, 64);
+    }
+
+}
